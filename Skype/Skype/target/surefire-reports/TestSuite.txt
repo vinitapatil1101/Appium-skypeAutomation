@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 211.113 s <<< FAILURE! - in TestSuite
+dialNumber(calling.Skype.TestCase_CallingUserWithDialer)  Time elapsed: 62.793 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: android:id/button1 (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at calling.Skype.TestCase_CallingUserWithDialer.dialNumber(TestCase_CallingUserWithDialer.java:50)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.id: android:id/button1
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DIN16002999', ip: '10.246.112.234', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at calling.Skype.TestCase_CallingUserWithDialer.dialNumber(TestCase_CallingUserWithDialer.java:50)
+
+searchContact(calling.Skype.TestCase_CallingUserWithDialer)  Time elapsed: 5.072 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Soft keyboard not present, cannot hide keyboard (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DIN16002999', ip: '10.246.112.234', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.skype.m2, appActivity=com.skype.m2.views.AppEntry, automationName=uiautomator2, javascriptEnabled=true, platformName=ANDROID, deviceName=NotUsed, platform=ANDROID}]
+Session ID: 1443f75b-a9cc-4156-9b92-3209de118f63
+	at calling.Skype.TestCase_CallingUserWithDialer.searchContact(TestCase_CallingUserWithDialer.java:78)
+
+scrollUp(calling.Skype.TestCase_CallingUserWithDialer)  Time elapsed: 0.133 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DIN16002999', ip: '10.246.112.234', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.skype.m2, appActivity=com.skype.m2.views.AppEntry, automationName=uiautomator2, javascriptEnabled=true, platformName=ANDROID, deviceName=NotUsed, platform=ANDROID}]
+Session ID: 1443f75b-a9cc-4156-9b92-3209de118f63
+	at calling.Skype.TestCase_CallingUserWithDialer.scrollUp(TestCase_CallingUserWithDialer.java:88)
+
+signout(calling.Skype.TestCase_CallingUserWithDialer)  Time elapsed: 50.423 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.ImageButton[@content-desc='Menu'] (tried for 20 second(s) with 500 MILLISECONDS interval)
+	at calling.Skype.TestCase_CallingUserWithDialer.signout(TestCase_CallingUserWithDialer.java:121)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //android.widget.ImageButton[@content-desc='Menu']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DIN16002999', ip: '10.246.112.234', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at calling.Skype.TestCase_CallingUserWithDialer.signout(TestCase_CallingUserWithDialer.java:121)
+

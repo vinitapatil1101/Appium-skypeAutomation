@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Smoke Testcases(failed)">
+    <classes>
+      <class name="calling.Skype.Testcase_Login">
+        <methods>
+          <include name="loginSkype" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tapOnSignIn"/>
+        </methods>
+      </class> <!-- calling.Skype.Testcase_Login -->
+      <class name="calling.Skype.TestCase_CallingUserWithDialer">
+        <methods>
+          <include name="dialNumber"/>
+          <include name="makingACallThroughDialer"/>
+          <include name="searchContact"/>
+          <include name="signout"/>
+          <include name="getNumberOfRecords"/>
+          <include name="saveContact"/>
+          <include name="scrollDown"/>
+          <include name="scrollUp"/>
+          <include name="horizontalScroll"/>
+        </methods>
+      </class> <!-- calling.Skype.TestCase_CallingUserWithDialer -->
+    </classes>
+  </test> <!-- Smoke Testcases(failed) -->
+</suite> <!-- Failed suite [Suite] -->

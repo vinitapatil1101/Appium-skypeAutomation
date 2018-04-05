@@ -1,0 +1,13 @@
+pageObjects\DialerPageAndroid.class
+mobileLib\MobileExcelDataConfig.class
+pageObjects\DialerPageIOS.class
+pageObjects\DialerPage.class
+mobileBaseClasses\MobileBaseClass.class
+mobileBaseClasses\MobileController$1.class
+pageObjects\LoginPageIOS.class
+pageObjects\LoginPageAndroid.class
+dataProvider_Component\Dataprovider_Login.class
+pageObjects\LoginPage.class
+mobileBaseClasses\MobileController$OS.class
+mobileBaseClasses\MobileController.class
+mobileLib\MobileConfigReader.class

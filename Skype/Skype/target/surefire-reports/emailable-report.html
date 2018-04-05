@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Smoke Testcases</a></td><td class="num">7</td><td class="num">0</td><td class="num attn">4</td><td class="num">209,779</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke Testcases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">calling.Skype.TestCase_CallingUserWithDialer</td><td><a href="#m0">dialNumber</a></td><td rowspan="1">1522933488070</td><td rowspan="1">62758</td></tr><tr class="failedeven"><td><a href="#m1">scrollUp</a></td><td rowspan="1">1522933561278</td><td rowspan="1">131</td></tr><tr class="failedeven"><td><a href="#m2">searchContact</a></td><td rowspan="1">1522933556204</td><td rowspan="1">5072</td></tr><tr class="failedeven"><td><a href="#m3">signout</a></td><td rowspan="1">1522933561745</td><td rowspan="1">50406</td></tr><tr><th colspan="4">Smoke Testcases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">calling.Skype.TestCase_CallingUserWithDialer</td><td><a href="#m4">getNumberOfRecords</a></td><td rowspan="1">1522933561623</td><td rowspan="1">57</td></tr><tr class="passedeven"><td><a href="#m5">horizontalScroll</a></td><td rowspan="1">1522933561680</td><td rowspan="1">65</td></tr><tr class="passedeven"><td><a href="#m6">makingACallThroughDialer</a></td><td rowspan="1">1522933483849</td><td rowspan="1">4219</td></tr><tr class="passedeven"><td><a href="#m7">saveContact</a></td><td rowspan="1">1522933550860</td><td rowspan="1">5344</td></tr><tr class="passedeven"><td><a href="#m8">scrollDown</a></td><td rowspan="1">1522933561410</td><td rowspan="1">212</td></tr><tr class="passedodd"><td rowspan="2">calling.Skype.Testcase_Login</td><td><a href="#m9">loginSkype</a></td><td rowspan="1">1522933452257</td><td rowspan="1">31588</td></tr><tr class="passedodd"><td><a href="#m10">tapOnSignIn</a></td><td rowspan="1">1522933446787</td><td rowspan="1">4210</td></tr></tbody></table><h2>Smoke Testcases</h2><h3 id="m0">calling.Skype.TestCase_CallingUserWithDialer#dialNumber</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: android:id/button1 (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at pageObjects.DialerPageAndroid.tapOnOKButton(DialerPageAndroid.java:211)
+	at calling.Skype.TestCase_CallingUserWithDialer.dialNumber(TestCase_CallingUserWithDialer.java:50)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: android:id/button1
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DIN16002999&apos;, ip: &apos;10.246.112.234&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 31 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">calling.Skype.TestCase_CallingUserWithDialer#scrollUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DIN16002999&apos;, ip: &apos;10.246.112.234&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.skype.m2, appActivity=com.skype.m2.views.AppEntry, automationName=uiautomator2, javascriptEnabled=true, platformName=ANDROID, deviceName=NotUsed, platform=ANDROID}]
+Session ID: 1443f75b-a9cc-4156-9b92-3209de118f63
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:325)
+	at pageObjects.DialerPageAndroid.swipeUp(DialerPageAndroid.java:420)
+	at calling.Skype.TestCase_CallingUserWithDialer.scrollUp(TestCase_CallingUserWithDialer.java:88)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">calling.Skype.TestCase_CallingUserWithDialer#searchContact</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Soft keyboard not present, cannot hide keyboard (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DIN16002999&apos;, ip: &apos;10.246.112.234&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.skype.m2, appActivity=com.skype.m2.views.AppEntry, automationName=uiautomator2, javascriptEnabled=true, platformName=ANDROID, deviceName=NotUsed, platform=ANDROID}]
+Session ID: 1443f75b-a9cc-4156-9b92-3209de118f63
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.HidesKeyboard.hideKeyboard(HidesKeyboard.java:27)
+	at pageObjects.LoginPageAndroid.HideKeyboard(LoginPageAndroid.java:141)
+	at calling.Skype.TestCase_CallingUserWithDialer.searchContact(TestCase_CallingUserWithDialer.java:78)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">calling.Skype.TestCase_CallingUserWithDialer#signout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.ImageButton[@content-desc=&apos;Menu&apos;] (tried for 20 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at pageObjects.LoginPageAndroid.tapOnMenu(LoginPageAndroid.java:201)
+	at calling.Skype.TestCase_CallingUserWithDialer.signout(TestCase_CallingUserWithDialer.java:121)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.ImageButton[@content-desc=&apos;Menu&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DIN16002999&apos;, ip: &apos;10.246.112.234&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 31 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">calling.Skype.TestCase_CallingUserWithDialer#getNumberOfRecords</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">calling.Skype.TestCase_CallingUserWithDialer#horizontalScroll</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">calling.Skype.TestCase_CallingUserWithDialer#makingACallThroughDialer</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">calling.Skype.TestCase_CallingUserWithDialer#saveContact</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">calling.Skype.TestCase_CallingUserWithDialer#scrollDown</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">calling.Skype.Testcase_Login#loginSkype</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{ExecuteFlag=Y, SerialNo=1, Scriptname=loginDetails, USERNAME=vinitapatil11, PASSWORD=vini11011987}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">calling.Skype.Testcase_Login#tapOnSignIn</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
