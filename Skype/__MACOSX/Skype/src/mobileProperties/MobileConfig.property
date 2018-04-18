@@ -1,0 +1,7 @@
+LoginData = src/MobileTestData/LoginData.xlsx
+
+LoginReport = src/MobileTestResults/LoginReport.xlsx
+
+
+
+

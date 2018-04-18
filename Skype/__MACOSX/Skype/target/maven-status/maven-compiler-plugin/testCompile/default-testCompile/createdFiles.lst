@@ -1,0 +1,5 @@
+calling\Skype\BaseTestClass$1.class
+calling\Skype\Testcase_Login.class
+calling\Skype\BaseTestClass.class
+calling\Skype\AppiumStart.class
+calling\Skype\TestCase_CallingUserWithDialer.class

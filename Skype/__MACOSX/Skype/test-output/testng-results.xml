@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="62417" started-at="2018-04-05T12:12:46Z" finished-at="2018-04-05T12:13:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="62417" started-at="2018-04-05T12:12:46Z" finished-at="2018-04-05T12:13:48Z">
+      <class name="calling.Skype.Testcase_Login">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:calling.Skype.Testcase_Login@617faa95]" name="setUp" is-config="true" duration-ms="42096" started-at="2018-04-05T17:42:46Z" finished-at="2018-04-05T17:43:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tapOnSignIn()[pri:1, instance:calling.Skype.Testcase_Login@617faa95]" name="tapOnSignIn" duration-ms="4677" started-at="2018-04-05T17:43:28Z" finished-at="2018-04-05T17:43:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tapOnSignIn -->
+        <test-method status="PASS" signature="loginSkype(java.util.Map)[pri:2, instance:calling.Skype.Testcase_Login@617faa95]" name="loginSkype" duration-ms="14634" started-at="2018-04-05T17:43:34Z" data-provider="LoginData" finished-at="2018-04-05T17:43:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExecuteFlag=Y, SerialNo=1, Scriptname=loginDetails, USERNAME=vinitapatil11, PASSWORD=vini11011987}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSkype -->
+      </class> <!-- calling.Skype.Testcase_Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

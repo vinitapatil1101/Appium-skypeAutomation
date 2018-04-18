@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="calling.Skype.TestCase_CallingUserWithDialer">
+        <methods>
+          <include name="dialNumber"/>
+          <include name="makingACallThroughDialer"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- calling.Skype.TestCase_CallingUserWithDialer -->
+      <class name="calling.Skype.Testcase_Login">
+        <methods>
+          <include name="loginSkype" invocation-numbers="0"/>
+          <include name="tapOnSignIn"/>
+        </methods>
+      </class> <!-- calling.Skype.Testcase_Login -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
