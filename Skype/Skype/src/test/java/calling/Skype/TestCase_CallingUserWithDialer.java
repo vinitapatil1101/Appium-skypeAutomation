@@ -50,26 +50,31 @@ public class TestCase_CallingUserWithDialer extends BaseTestClass{
 		dialerPage.tapOnOKButton();
 
 	  
-  }
+ /* }
 	@Test(priority=5)
 	
-	public void saveContact() {
-		
+	public void saveContact() {*/
+		/*
 		dialerPage.tapOnAddContactButton();
 		
 		dialerPage.enterContactName();
 		
-		dialerPage.tapOnSavePhoneNumber();
+		dialerPage.tapOnSavePhoneNumber();*/
+		
 		
 		dialerPage.backBtn();
 		
 		dialerPage.backBtn();
+		
+		loginPage.tapOnMenu();
+		
+		loginPage.tapSignout();
 	
 	}
 
-	@Test(priority=6)
+	//@Test(priority=6)
 	
-	public void searchContact() {
+	/*public void searchContact() {
 		
 		dialerPage.tapSearchButton();
 	
@@ -79,9 +84,9 @@ public class TestCase_CallingUserWithDialer extends BaseTestClass{
 		
 		dialerPage.backBtn();	
 		
-	}
+	}*/
 		
-	@Test(priority=7)
+	/*@Test(priority=7)
 	
 	public void scrollUp() {
 		
@@ -114,14 +119,14 @@ public class TestCase_CallingUserWithDialer extends BaseTestClass{
 	}
 	
 	
-	@Test(priority=11)
+	@Test(priority=11)*/
 	
-	public void signout() {
+	/*public void signout() {
 		
 		loginPage.tapOnMenu();
 		
 		loginPage.tapSignout();
 		
-	}
+	}*/
 	
 }
