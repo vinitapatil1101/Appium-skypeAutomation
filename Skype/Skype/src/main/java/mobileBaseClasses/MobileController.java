@@ -40,18 +40,18 @@ public class MobileController {
         }
         switch(executionOS){
         case ANDROID:
-          //  File classpathRoot = new File(System.getProperty("user.dir"));
-          //  File appDir = new File(classpathRoot, "/app/Android");
-          //  File app = new File (appDir, "Voice_Everywhere_0.0.0.2103.apk");
-     
+            File classpathRoot = new File(System.getProperty("user.dir"));
+            File appDir = new File(classpathRoot, "/app/Android");
+            File app = new File (appDir, "com.skype.m2.apk");
+  
             capabilities.setCapability("automationName", "uiautomator2");    
             capabilities.setCapability("platformName", "Android");
             capabilities.setCapability("deviceName", "NotUsed");
-          //  capabilities.setCapability("app", app.getAbsolutePath());    
+            capabilities.setCapability("app", app.getAbsolutePath());    
             capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.skype.m2");
             capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.skype.m2.views.AppEntry");
         
-            driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            driver = new AndroidDriver<MobileElement>(new URL("http://127.0.1.1:4723/wd/hub"), capabilities);
           
             break;
         case IOS:
