@@ -31,7 +31,7 @@ public class BaseTestClass extends MobileBaseClass{
 		//String Appium_Node_Path="C:/Program Files/Appium/node.exe";
 		//String Appium_JS_Path="C:/Program Files/Appium/node_modules/appium/bin/appium.js";
 
-		String Appium_Node_Path="/usr/local/bin/node/node.exe";
+	/*	String Appium_Node_Path="/usr/local/bin/node/node.exe";
 		String Appium_JS_Path="/usr/local/lib/node_modules/appium/build/lib/main.js";
 		
 		AppiumDriverLocalService appiumService;
@@ -39,9 +39,9 @@ public class BaseTestClass extends MobileBaseClass{
 		appiumService = AppiumDriverLocalService.buildService(new AppiumServiceBuilder().withIPAddress("127.0.1.1").
 				usingPort(4723).usingDriverExecutable(new File(Appium_Node_Path)).
 			                withAppiumJS(new File(Appium_JS_Path)));
-		appiumService.start();
+		appiumService.start(); */
 		
-		MobileController.instance.start();
+		MobileController.instance.start(); 
 		switch (MobileController.executionOS) {
         case ANDROID:
         	
