@@ -28,8 +28,12 @@ public class BaseTestClass extends MobileBaseClass{
 	@BeforeTest
 	public void setUp() throws Exception {
 		
-		String Appium_Node_Path="C:/Program Files/Appium/node.exe";
-		String Appium_JS_Path="C:/Program Files/Appium/node_modules/appium/bin/appium.js";
+		//String Appium_Node_Path="C:/Program Files/Appium/node.exe";
+		//String Appium_JS_Path="C:/Program Files/Appium/node_modules/appium/bin/appium.js";
+
+		String Appium_Node_Path="/usr/local/bin/node.exe";
+		String Appium_JS_Path="/usr/local/lib/node_modules/appium/build/lib/main.js";
+		
 		AppiumDriverLocalService appiumService;
 
 		appiumService = AppiumDriverLocalService.buildService(new AppiumServiceBuilder().withIPAddress("127.0.1.1").
