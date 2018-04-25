@@ -46,7 +46,7 @@ public class MobileController {
   
             capabilities.setCapability("automationName", "uiautomator2");    
             capabilities.setCapability("platformName", "Android");
-            capabilities.setCapability("deviceName", "NotUsed");
+            capabilities.setCapability("deviceName", "21dcb7d0cb0c7ece");
           //  capabilities.setCapability("app", app.getAbsolutePath());    
             capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.skype.m2");
             capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.skype.m2.views.AppEntry");
