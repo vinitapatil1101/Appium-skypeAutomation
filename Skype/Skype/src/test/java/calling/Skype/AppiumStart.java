@@ -10,17 +10,25 @@ public class AppiumStart {
 	
 	/*AppiumDriverLocalService appiumService;
     String appiumServiceUrl;*/
-    /*
+    
     @BeforeSuite
     public void appiumStartCode() throws IOException, InterruptedException
     {
-	Runtime.getRuntime().exec("cmd /c start D:\\startappium.bat appium -a 127.0.0.1 -p 4723");
-	Thread.sleep(7000L);
-	
-    appiumService = AppiumDriverLocalService.buildDefaultService();
-		appiumService.start();
-       appiumServiceUrl = appiumService.getUrl().toString();
-       System.out.println("Appium Service Address : - "+ appiumServiceUrl);
-}*/
+	     /*
+     * 1. Install Node.js
+      *  MAC
+     * 2. https://github.com/isonic1/appium-workshop/blob/master/Appium%20Mac%20Installation%20Instructions.md
+     * 3. npm install -g appium
+     * 4 APpium -V
+     * 5 Appium
+     */
+    
+     // starting the Appium server code
+
+     AppiumDriverLocalService service = AppiumDriverLocalService.buildDefaultService();
+     service.start();
+     // your test scripts logic...
+     service.stop();
+}
 
 }
